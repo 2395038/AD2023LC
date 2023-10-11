@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="ShoppingCart" Height="450" Width="800">
+        Title="ShoppingCart" Height="600" Width="900">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/图片_20231011214059.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListView Grid.Column="1" Name="OrderListView" Background="Pink">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Bubble Tea" Width="150"/>
+                    <GridViewColumn Header="Quantity" Width="50"/>
+                    <GridViewColumn Header="Sugar Level" Width="100"/>
+                    <GridViewColumn Header="Ice Quantity" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Grid.Column="1" Content="Check Out" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,52,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3"/>
     </Grid>
 </Window>

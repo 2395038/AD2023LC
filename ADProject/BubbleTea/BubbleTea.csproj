@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ShoppingCart.xaml.cs">
+      <DependentUpon>ShoppingCart.xaml</DependentUpon>
+    </Compile>
     <Page Include="EmployeeLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,6 +78,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ProductDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShoppingCart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="图片_20231011052052.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片_20231011214059.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
