@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\Desktop\Software\AD2023LC\ADProject\BubbleTea\obj\Debug\
+C:\Users\Administrator\Desktop\Software\AD2023LC\ADProject\BubbleTea\obj\Release\
 BubbleTea
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Administrator\Desktop\Software\AD2023LC\ADProject\BubbleTea\App.xaml
 3-1192252253
 
-8493070245
+7-1719808433
 13-1310406943
 EmployeeLogin.xaml;MainWindow.xaml;ProductDetails.xaml;
 
