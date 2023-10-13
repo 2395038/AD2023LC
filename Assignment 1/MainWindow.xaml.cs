@@ -36,6 +36,7 @@ namespace Assignment_1
             {
                 Sales sales = new Sales();
                 sales.Show();
+                //note
             }
         }
     }
