@@ -37,34 +37,7 @@ namespace Assignment_1
         public static NpgsqlConnection con; 
 
         public static NpgsqlCommand cmd; 
-        private void insert_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                establishConnect();
-               
-                con.Open();
-                
-                string Query = "insert into products values(@name, @id, @amount, @price, default";
-                
-                cmd = new NpgsqlCommand(Query, con); 
 
-                cmd.Parameters.AddWithValue("@name", name.Text);
-                cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
-                cmd.Parameters.AddWithValue("@amount", double.Parse(amount.Text));
-                cmd.Parameters.AddWithValue("@price", double.Parse(price.Text));
-
-                cmd.ExecuteNonQuery();
-                
-                MessageBox.Show("Product Created Successfully");
-                
-                con.Close();
-            }
-            catch (NpgsqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void establishConnect()
         {
@@ -86,14 +59,41 @@ namespace Assignment_1
             string port = "Port=5432;";
             string dbName = "Database=VanierFall2023;";
             string userName = "Username=postgres;";
-            string password = "Password=;";
+            string password = "Password=123;";
 
             string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             return connectionString;
 
 
         }
+        private void insert_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                establishConnect();
 
+                con.Open();
+
+                string Query = "insert into products values(@name, @id, @amount, @price)";
+
+                cmd = new NpgsqlCommand(Query, con);
+
+                cmd.Parameters.AddWithValue("@name", name.Text);
+                cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
+                cmd.Parameters.AddWithValue("@amount", double.Parse(amount.Text));
+                cmd.Parameters.AddWithValue("@price", double.Parse(price.Text));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Product Created Successfully");
+
+                con.Close();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void show_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -102,7 +102,7 @@ namespace Assignment_1
                 
                 con.Open();
                 
-                string Query = "select * from students";
+                string Query = "select * from products";
                 
                 cmd = new NpgsqlCommand(Query, con);
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
@@ -128,12 +128,12 @@ namespace Assignment_1
                 
                 con.Open();
                 
-                string Query = "select * from products where id=@id;";
+                string Query = "select * from products where Product_ID = @id";
                
                 cmd = new NpgsqlCommand(Query, con);
                 
                 cmd.Parameters.AddWithValue("@id", int.Parse(search.Text));
-                
+             
                 bool noData = true;
                 
                 NpgsqlDataReader dr = cmd.ExecuteReader(); 
@@ -141,10 +141,10 @@ namespace Assignment_1
                 while (dr.Read())
                 {
                     noData = false;
-                    name.Text = dr["product_name"].ToString();
-                    id.Text = dr["product_id"].ToString();
-                    amount.Text = dr["product_amount"].ToString();
-                    price.Text = dr["product_price"].ToString();
+                    name.Text = dr["Product_Name"].ToString();
+                    id.Text = dr["Product_ID"].ToString();
+                    amount.Text = dr["Amount"].ToString();
+                    price.Text = dr["Price"].ToString();
                     //date.Text = dr["enter_date"].ToString();
                 }
                 if (noData) // checking the data Retrival
@@ -167,7 +167,7 @@ namespace Assignment_1
 
                 con.Open();
 
-                string Query = "UPDATE products SET name = @name, amount = @amount, price = @price WHERE id = @id";
+                string Query = "UPDATE products SET Product_Name = @name, Amount = @amount, Price = @price WHERE Product_ID = @id";
 
                 cmd = new NpgsqlCommand(Query, con);
 
@@ -195,11 +195,13 @@ namespace Assignment_1
 
                 con.Open();
 
-                string Query = "DELETE FROM products WHERE id = @id";
+                string Query = "DELETE FROM products WHERE Product_ID = @id";
 
                 cmd = new NpgsqlCommand(Query, con);
 
                 cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
+
+
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -221,7 +223,10 @@ namespace Assignment_1
         
             }
 
-        private void search_TextChanged(object sender, TextChangedEventArgs e)
+       
+        /*
+         *
+         *private void search_TextChanged(object sender, TextChangedEventArgs e)
         {
             try
             {
@@ -229,7 +234,7 @@ namespace Assignment_1
 
                 con.Open();
 
-                string Query = "SELECT * FROM products WHERE id = @id";
+                string Query = "SELECT * FROM products WHERE Product_ID = @id";
 
                 cmd = new NpgsqlCommand(Query, con);
 
@@ -240,9 +245,9 @@ namespace Assignment_1
                 if (reader.Read())
                 {
                    
-                    string productName = reader["name"].ToString();
-                    double productAmount = Convert.ToDouble(reader["amount"]);
-                    double productPrice = Convert.ToDouble(reader["price"]);
+                    string productName = reader["Product_Name"].ToString();
+                    double productAmount = Convert.ToDouble(reader["Amount"]);
+                    double productPrice = Convert.ToDouble(reader["Price"]);
 
                     MessageBox.Show("Product Found:" +
                                     "\nName: " + productName +
@@ -261,5 +266,6 @@ namespace Assignment_1
                 MessageBox.Show(ex.Message);
             }
         }
+        */
     }
 }
