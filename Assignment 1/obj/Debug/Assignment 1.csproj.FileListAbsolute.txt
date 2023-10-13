@@ -48,3 +48,53 @@
 \\Mac\Home\Desktop\Software\Application Development 1\Assignment 1\obj\Debug\Assignment 1.csproj.CopyComplete
 \\Mac\Home\Desktop\Software\Application Development 1\Assignment 1\obj\Debug\Assignment 1.exe
 \\Mac\Home\Desktop\Software\Application Development 1\Assignment 1\obj\Debug\Assignment 1.pdb
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Assignment 1.exe.config
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Assignment 1.exe
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Assignment 1.pdb
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Npgsql.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Buffers.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Collections.Immutable.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Memory.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Text.Json.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Threading.Channels.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.ValueTuple.dll
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\Npgsql.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Buffers.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Collections.Immutable.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Memory.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Text.Json.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Threading.Channels.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\bin\Debug\System.ValueTuple.xml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.csproj.AssemblyReference.cache
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Admin.g.cs
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\MainWindow.g.cs
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Sales.g.cs
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\App.g.cs
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1_MarkupCompile.cache
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1_MarkupCompile.lref
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Admin.baml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\MainWindow.baml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Sales.baml
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.g.resources
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment_1.Properties.Resources.resources
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.csproj.GenerateResource.cache
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.csproj.CoreCompileInputs.cache
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.csproj.CopyComplete
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.exe
+C:\Users\zz918\OneDrive\Desktop\Sofeware develpment\Team4\Application Desktop\Assignment 1\obj\Debug\Assignment 1.pdb
