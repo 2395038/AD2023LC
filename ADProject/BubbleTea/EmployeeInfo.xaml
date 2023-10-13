@@ -1,0 +1,25 @@
+﻿<Window x:Class="BubbleTea.EmployeeInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BubbleTea"
+        mc:Ignorable="d"
+        Title="EmployeeInfo" Height="450" Width="800">
+    <Grid Background="#FFFFC1CC">
+
+        <Label Content="Employee ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="33" Margin="86,184,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="work secheule" HorizontalAlignment="Left" Height="33" Margin="86,297,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Work secheule" HorizontalAlignment="Left" Height="33" Margin="400,72,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="total work hrs " HorizontalAlignment="Left" Height="33" Margin="86,245,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,192,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,254,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,306,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
+        <Label Content="EmployeeInfo" HorizontalAlignment="Left" Height="34" Margin="258,22,0,0" VerticalAlignment="Top" Width="246"/>
+
+    </Grid>
+</Window>

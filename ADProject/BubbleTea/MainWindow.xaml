@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900">
-    <Grid>
+        Title="MainWindow" Height="664" Width="936">
+    <Grid x:Name="MyGrid">
         <Grid.Background>
             <ImageBrush ImageSource="/图片_20231011052012.jpg"/>
         </Grid.Background>
-        <Button x:Name="iceTea1" Width="180" Height="38" Margin="418,150,302,396">
+        <Button x:Name="iceTea1" Width="180" Height="38" Margin="418,150,302,396" Content="Jasmine Green Tea" Click="iceTea1_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
@@ -18,150 +18,144 @@
                     </Border>
                 </ControlTemplate>
             </Button.Template>
-            Jasmine Green Tea
         </Button>
-        <Button x:Name="iceTea2" Width="180" Height="38" Margin="450,196,270,350" Content="Original Black Tea">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea3" Width="180" Height="38" Margin="418,240,302,306" Content="Rose Oolong">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea4" Width="180" Height="38" Margin="450,285,270,261" Content="Honeybush Melon">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea5" Width="180" Height="38" Margin="418,331,302,215" Content="Wintermelon Iced Tea">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea6" Width="180" Height="38" Margin="450,376,270,170" Content="Wintermelon Green Tea">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea7" Width="180" Height="38" Margin="418,421,302,125" Content="Honey Green Tea">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="iceTea8" Width="180" Height="38" Margin="450,466,270,80" Content="Osmanthus Oolong">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea1" Width="180" Height="38" Margin="650,150,70,396" Content="Jasmine Green Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea2" Width="180" Height="38" Margin="682,196,38,350" Content="Thai Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea3" Width="180" Height="38" Margin="650,240,70,306" Content="Masala Chai Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea4" Width="180" Height="38" Margin="682,285,38,261" Content="Vanilla Nuts Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea5" Width="180" Height="38" Margin="650,331,70,215" Content="Hong Kong Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea6" Width="180" Height="38" Margin="682,376,38,170" Content="Brown Sugar Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea7" Width="180" Height="38" Margin="650,421,70,125" Content="Espresso Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="milkTea8" Width="180" Height="38" Margin="682,466,38,80" Content="Fresh Taro Creamy">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button Width="50" Height="50" Margin="136,524,714,10" Foreground="#FF8593E0" FontWeight="Bold" Click="Button_Click">
+        <Button x:Name="iceTea2" Width="180" Height="38" Margin="460,221,280,376"  Content="Rose Oolong" Click="iceTea2_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <Ellipse Fill="white"/>
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
                 </ControlTemplate>
             </Button.Template>
-            Admin
         </Button>
+
+        <Button x:Name="iceTea3" Width="180" Height="38" Margin="418,240,302,306" Content="Rose Oolong" Click="iceTea3_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="iceTea4" Width="180" Height="38" Margin="450,285,270,261" Content="Honeybush Melon" Click="iceTea4_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="iceTea5" Width="180" Height="38" Margin="418,331,302,215" Content="Wintermelon Iced Tea" Click="iceTea5_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="iceTea6" Width="180" Height="38" Margin="450,376,270,170" Content="Wintermelon Green Tea" Click="iceTea6_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="iceTea7" Width="180" Height="38" Margin="418,421,302,125" Content="Honey Green Tea" Click="iceTea7_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="iceTea8" Width="180" Height="38" Margin="450,466,270,80" Content="Osmanthus Oolong Tea" Click="iceTea8_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea1" Width="180" Height="38" Margin="650,150,70,396" Content="Jasmine Green Creamy" Click="milkTea1_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea2" Width="180" Height="38" Margin="682,196,38,350" Content="Thai Creamy" Click="milkTea2_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea3" Width="180" Height="38" Margin="650,240,70,306" Content="Masala Chai Creamy" Click="milkTea3_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea4" Width="180" Height="38" Margin="682,285,38,261" Content="Vanilla Nuts Creamy" Click="milkTea4_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea5" Width="180" Height="38" Margin="650,331,70,215" Content="Hong Kong Creamy" Click="milkTea5_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea6" Width="180" Height="38" Margin="682,376,38,170" Content="Brown Sugar Creamy" Click="milkTea6_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea7" Width="180" Height="38" Margin="650,421,70,125" Content="Espresso Creamy" Click="milkTea7_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="milkTea8" Width="180" Height="38" Margin="682,466,38,80" Content="Fresh Taro Creamy" Click="milkTea8_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightBlue" CornerRadius="25, 0, 25, 0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="login" Content="Log In" HorizontalAlignment="Left" Height="22" Margin="872,0,0,0" VerticalAlignment="Top" Width="48" Background="#FFFFC1CC" BorderBrush="#FFF6B8C3" Click="login_Click"/>
     </Grid>
 </Window>
