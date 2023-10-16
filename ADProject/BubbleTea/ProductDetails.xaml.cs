@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static BubbleTea.MainWindow;
 
 namespace BubbleTea
 {
@@ -27,9 +28,12 @@ namespace BubbleTea
             InitializeComponent(); 
             EstablishConnect();
             //insertImage();
-            //Loaded += ProductDetails_Load;
-            productName.Content = SharedVariables.product_name;
+            // ProductDetails_Load();
+           createLabel();
+            //productName.Content = SharedVariables.product_name;
+
         }
+        
 
         public static NpgsqlConnection con;
 
@@ -39,6 +43,8 @@ namespace BubbleTea
 
         private void ProductDetails_Load(object sender, RoutedEventArgs e)
         {
+
+          
             /*
  try
  {
@@ -152,23 +158,22 @@ namespace BubbleTea
            
         }
         */
-        public static class SharedVariables
+
+        public void createLabel()
         {
-            public static int product_id { get; set; }
-            public static string product_name { get; set; }
-            public static string sugar { get; set; }
-            public static string ice { get; set; }
-            public static string quantity { get; set; }
-            public static string size { get; set; }
-            public static int count { get; set; }
-            public static double price { get; set; }
-            static SharedVariables()
+            Label ProductName = new Label
             {
-                // Initialize static properties or perform any other initialization logic here
-                count = 1;
-            }
-
-
+                Content = SharedVariables.product_name,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Top,
+                Width = 237,
+                Height = 40,
+                Margin = new Thickness(565, 70, 0, 0),
+                Name = "ProductName1",
+                FontSize = 14
+            };
+            myGrid1.Children.Add(ProductName);
+           
         }
         //public static readonly List<SharedVariables> orderedProductInfo = new List<>();
         public static string[] orderedProductInfo;
@@ -176,7 +181,7 @@ namespace BubbleTea
         public static List<string[]> productInfo = new List<string[]>();
         private void addToOrder_Click(object sender, RoutedEventArgs e)
         {
-
+           
             SharedVariables.count++;
             MessageBox.Show($"{SharedVariables.product_name} added to order successfully");
             SharedVariables.sugar = ((ComboBoxItem)sugar.SelectedItem).Content.ToString();
@@ -224,6 +229,7 @@ namespace BubbleTea
         {
             ShoppingCart cart = new ShoppingCart();
             cart.Show();
+            this.Close();
         }
     }
 }
