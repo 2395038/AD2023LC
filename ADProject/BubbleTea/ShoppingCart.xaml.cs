@@ -21,17 +21,20 @@ namespace BubbleTea
     /// </summary>
     public partial class ShoppingCart : Window
     {
+        
         public ShoppingCart()
         {
             InitializeComponent();
             addNewLabel();
-            
+           
         }
         List<string[]> productInfo = ProductDetails.productInfo;
         private List<Label> dynamicLabels = new List<Label>();
+        Boolean CompleteOrder=false;
         private void addNewLabel()
 
         {
+            
             int num = 30;
            
 
@@ -234,9 +237,18 @@ namespace BubbleTea
             {
                 myGrid.Children.Remove(label);
             }
+            //clear all the values in sharedvariable 
+            productInfo.Clear();
+
             // Clear the list
             dynamicLabels.Clear();
+            this.Close();
+            //CompleteOrder = true;
 
+           // MainWindow mainWindow = new MainWindow();
+
+            // Show MainWindow
+            // mainWindow.Show();
 
         }
 

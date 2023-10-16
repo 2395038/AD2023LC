@@ -105,6 +105,7 @@ namespace BubbleTea
                 MessageBox.Show(ex.Message);
             }
             employeeInfo.Show();
+            this.Close();
 
         }
 
@@ -112,6 +113,7 @@ namespace BubbleTea
         {
             Admin admin = new Admin();  
             admin.Show();
+            this.Close();
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
         Title="ProductDetails" Height="600" Width="900">
-    <Grid>
+    <Grid x:Name="myGrid1">
         <Grid.Background>
             <ImageBrush ImageSource="/图片_20231011052142.jpg"/>
         </Grid.Background>
@@ -44,7 +44,7 @@
 
         </ComboBox>
         <Image x:Name="Image" HorizontalAlignment="Left" Height="148" Margin="628,101,0,0" VerticalAlignment="Top" Width="85" Source="C:\\Users\\zz918\\OneDrive\\Desktop\\ADProject\\BubbleTea\\image\\iceTeaDemo1.png"/>
-        <Label x:Name="productName" Content="Label" HorizontalAlignment="Left" Height="26" Margin="590,70,0,0" VerticalAlignment="Top" Width="159" FontSize="14" RenderTransformOrigin="0.697,0.267"/>
+       
         <Label Content="Quantity" HorizontalAlignment="Left" Margin="519,432,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF4691A9"/>
         <TextBox x:Name="quantity" HorizontalAlignment="Left" Height="35" Margin="670,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="14"/>
 

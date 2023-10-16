@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="EmployeeMangment" Height="600
-        " Width="800">
-    <Grid Background="#FFFFC1CC">
+        Title="EmployeeMangment" Height="755" Width="811">
+    <Grid Background="#FFFFC1CC" Margin="0,0,0,-83">
         <Label Content="Employee ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="First Name" HorizontalAlignment="Left" Height="33" Margin="86,172,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Passwrod" HorizontalAlignment="Left" Height="33" Margin="86,277,0,0" VerticalAlignment="Top" Width="192" RenderTransformOrigin="0.496,0.754"/>
-        <Label Content="Work secheule" HorizontalAlignment="Left" Height="33" Margin="86,355,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Work Secheule" HorizontalAlignment="Left" Height="33" Margin="76,477,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Search ID" HorizontalAlignment="Left" Height="29" Margin="486,89,0,0" VerticalAlignment="Top" Width="116"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="588,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="216,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
@@ -31,6 +30,14 @@
         <Button x:Name="Add_Copy1" HorizontalAlignment="Left" Height="34"  Content="Delete Employee Info" Margin="448,271,0,0" VerticalAlignment="Top" Width="255"/>
         <Button x:Name="Add_Copy2" HorizontalAlignment="Left" Height="34"  Content="Show All Employee Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255"/>
         <Button Content="Product Mangment"  HorizontalAlignment="Left" Height="34" Margin="512,26,0,0" VerticalAlignment="Top" Width="255"/>
+        <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,515,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,664,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Secheule Arragment" HorizontalAlignment="Left" Height="28" Margin="78,371,0,0" VerticalAlignment="Top" Width="152"/>
+        <DatePicker HorizontalAlignment="Left" Height="28" Margin="216,404,0,0" VerticalAlignment="Top" Width="122"/>
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="216,437,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Date" HorizontalAlignment="Left" Height="28" Margin="78,404,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Work Shifts" HorizontalAlignment="Left" Height="28" Margin="78,437,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button Content="Show the Week Work Secheule" HorizontalAlignment="Left" Height="38" Margin="450,394,0,0" VerticalAlignment="Top" Width="253" Click="Button_Click"/>
 
     </Grid>
 </Window>
