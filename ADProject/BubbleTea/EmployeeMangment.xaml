@@ -15,29 +15,29 @@
         <Label Content="Search ID" HorizontalAlignment="Left" Height="29" Margin="486,89,0,0" VerticalAlignment="Top" Width="116"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="588,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="216,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,289,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,329,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="lastName" HorizontalAlignment="Left" Height="21" Margin="216,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="firstName" HorizontalAlignment="Left" Height="21" Margin="216,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="21" Margin="216,289,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="workhours" HorizontalAlignment="Left" Height="21" Margin="216,329,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
         <Label Content="Total work Hrs " HorizontalAlignment="Left" Height="33" Margin="86,322,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Phone " HorizontalAlignment="Left" Height="33" Margin="86,210,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Employee Info" HorizontalAlignment="Left" Height="24" Margin="55,48,0,0" VerticalAlignment="Top" Width="127"/>
         <Label Content="Email " HorizontalAlignment="Left" Height="33" Margin="86,243,0,0" VerticalAlignment="Top" Width="192"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="216,221,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="216,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <Button x:Name="Add"  HorizontalAlignment="Left" Height="34"  Content="Add New Employee Info" Margin="448,143,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button x:Name="Add_Copy" HorizontalAlignment="Left" Height="34"  Content="Update Employee Info" Margin="448,200,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button x:Name="Add_Copy1" HorizontalAlignment="Left" Height="34"  Content="Delete Employee Info" Margin="448,271,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button x:Name="Add_Copy2" HorizontalAlignment="Left" Height="34"  Content="Show All Employee Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button Content="Product Mangment"  HorizontalAlignment="Left" Height="34" Margin="512,26,0,0" VerticalAlignment="Top" Width="255"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="22" Margin="216,221,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="22" Margin="216,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <Button x:Name="Add"  HorizontalAlignment="Left" Height="34"  Content="Add New Employee Info" Margin="448,143,0,0" VerticalAlignment="Top" Width="255" Click="Add_Click"/>
+        <Button x:Name="Update" HorizontalAlignment="Left" Height="34"  Content="Update Employee Info" Margin="448,200,0,0" VerticalAlignment="Top" Width="255"/>
+        <Button x:Name="Delete" HorizontalAlignment="Left" Height="34"  Content="Delete Employee Info" Margin="448,271,0,0" VerticalAlignment="Top" Width="255"/>
+        <Button x:Name="Show_All" HorizontalAlignment="Left" Height="34"  Content="Show All Employee Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255"/>
+        <Button Content="Product Management"  HorizontalAlignment="Left" Height="34" Margin="512,26,0,0" VerticalAlignment="Top" Width="255"/>
         <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,515,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,664,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Label Content="Secheule Arragment" HorizontalAlignment="Left" Height="28" Margin="78,371,0,0" VerticalAlignment="Top" Width="152"/>
-        <DatePicker HorizontalAlignment="Left" Height="28" Margin="216,404,0,0" VerticalAlignment="Top" Width="122"/>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="216,437,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Schedule Arrangement" HorizontalAlignment="Left" Height="28" Margin="78,371,0,0" VerticalAlignment="Top" Width="152"/>
+        <DatePicker x:Name="scheduledDate" HorizontalAlignment="Left" Height="28" Margin="216,404,0,0" VerticalAlignment="Top" Width="122"/>
+        <ComboBox x:Name="workShifts" HorizontalAlignment="Left" Height="26" Margin="216,437,0,0" VerticalAlignment="Top" Width="122"/>
         <Label Content="Date" HorizontalAlignment="Left" Height="28" Margin="78,404,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Work Shifts" HorizontalAlignment="Left" Height="28" Margin="78,437,0,0" VerticalAlignment="Top" Width="114"/>
-        <Button Content="Show the Week Work Secheule" HorizontalAlignment="Left" Height="38" Margin="450,394,0,0" VerticalAlignment="Top" Width="253" Click="Button_Click"/>
+        <Button Content="Show the Week Work Schedule" HorizontalAlignment="Left" Height="38" Margin="450,394,0,0" VerticalAlignment="Top" Width="253" />
 
     </Grid>
 </Window>

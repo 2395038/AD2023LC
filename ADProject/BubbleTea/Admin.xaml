@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
         Title="Admin" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Pink">
         <Button x:Name="select" Content="Select" HorizontalAlignment="Left" Height="33" Margin="249,296,0,0" VerticalAlignment="Top" Width="214" Click="select_Click"/>
-        <RadioButton x:Name="radio1" Content="Employee Mangment System" HorizontalAlignment="Left" Height="20" Margin="249,114,0,0" VerticalAlignment="Top" Width="223"/>
-        <RadioButton x:Name="radio2" Content="Inventroy Mangment System" HorizontalAlignment="Left" Height="20" Margin="249,167,0,0" VerticalAlignment="Top" Width="223"/>
-        <RadioButton x:Name="radio3" Content="Product Mangment System" HorizontalAlignment="Left" Height="20" Margin="249,217,0,0" VerticalAlignment="Top" Width="223"/>
+        <RadioButton x:Name="radio1" Content="Employee Management System" HorizontalAlignment="Left" Height="20" Margin="249,114,0,0" VerticalAlignment="Top" Width="223"/>
+        <RadioButton x:Name="radio2" Content="Inventroy Management System" HorizontalAlignment="Left" Height="20" Margin="249,167,0,0" VerticalAlignment="Top" Width="223"/>
+        <RadioButton x:Name="radio3" Content="Product Management System" HorizontalAlignment="Left" Height="20" Margin="249,217,0,0" VerticalAlignment="Top" Width="223"/>
 
 
     </Grid>

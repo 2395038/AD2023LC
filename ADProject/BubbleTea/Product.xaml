@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
         Title="Product" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Pink">
         <Label Content="Product ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Product Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="Product Price" HorizontalAlignment="Left" Height="33" Margin="86,172,0,0" VerticalAlignment="Top" Width="192"/>
