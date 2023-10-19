@@ -12,9 +12,19 @@
         </Grid.Background>
         <Label Content="Employee ID" HorizontalAlignment="Left" Margin="450,183,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Calibri Light"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="450,250,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Calibri Light"/>
-        <TextBox HorizontalAlignment="Left" Margin="605,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="605,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
-        <Button Content="LOGIN" HorizontalAlignment="Left" Margin="548,339,0,0" VerticalAlignment="Top" FontSize="25" Width="120" FontFamily="Gabriola" Background="White" Foreground="#FF5AB5D2"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Margin="605,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
+        <TextBox x:Name="PIN" HorizontalAlignment="Left" Margin="605,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
+        <Button Content="LOGIN" HorizontalAlignment="Left" Margin="559,389,0,0" VerticalAlignment="Top" FontSize="25" Width="120" FontFamily="Gabriola" Background="White" Foreground="#FF5AB5D2" Click="Button_Click"/>
+        <RadioButton Content="Admin" HorizontalAlignment="Left" Height="40" Margin="565,339,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5" FontSize="24" Checked="RadioButton_Checked" FontFamily="Calibri Light">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.104"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
 
     </Grid>
 </Window>

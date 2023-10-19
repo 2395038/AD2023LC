@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,7 @@ namespace Assignment_1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void selection_Click(object sender, RoutedEventArgs e)
@@ -30,13 +32,17 @@ namespace Assignment_1
             if (radioOne.IsChecked == true)
             {
                 Admin admin = new Admin();
-                admin.Show(); 
+                admin.Show();
+
+                
             }
             else if (radioTwo.IsChecked == true)
             {
                 Sales sales = new Sales();
                 sales.Show();
+                //note;
             }
+            
         }
     }
 }

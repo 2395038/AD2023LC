@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
         Title="ProductDetails" Height="600" Width="900">
-    <Grid>
+    <Grid x:Name="myGrid1">
         <Grid.Background>
             <ImageBrush ImageSource="/图片_20231011052142.jpg"/>
         </Grid.Background>
-        <Label Content="What's included" HorizontalAlignment="Left" Margin="582,368,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF4691A9"/>
-        <Label Content="sugar" HorizontalAlignment="Left" Margin="484,428,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="ice" HorizontalAlignment="Left" Margin="698,428,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.48,-0.864"/>
-        <ComboBox HorizontalAlignment="Left" Height="35" Margin="557,430,0,0" VerticalAlignment="Top" Width="100" SelectedIndex="1" FontSize="20">
+        <Label Content="What's included" HorizontalAlignment="Left" Margin="585,267,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF4691A9"/>
+        <Label Content="sugar" HorizontalAlignment="Left" Margin="487,327,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ice" HorizontalAlignment="Left" Margin="701,327,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.48,-0.864"/>
+        <ComboBox x:Name="sugar" HorizontalAlignment="Left" Height="35" Margin="560,329,0,0" VerticalAlignment="Top" Width="100" SelectedIndex="1" FontSize="20">
             <ComboBoxItem Content="120%"/>
             <ComboBoxItem Content="100%"/>
             <ComboBoxItem Content="80%"/>
@@ -21,14 +21,32 @@
             <ComboBoxItem Content="30%"/>
             <ComboBoxItem Content="0%"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="35" Margin="749,430,0,0" VerticalAlignment="Top" Width="100" SelectedIndex="0" FontSize="20">
+        <ComboBox x:Name="ice" HorizontalAlignment="Left" Height="35" Margin="752,329,0,0" VerticalAlignment="Top" Width="100" SelectedIndex="0" FontSize="20">
             <ComboBoxItem Content="regular"/>
             <ComboBoxItem Content="less"/>
             <ComboBoxItem Content="no ice"/>
             <ComboBoxItem Content="hot"/>
         </ComboBox>
-        <Button Content="Add to Order" HorizontalAlignment="Left" Margin="503,498,0,0" VerticalAlignment="Top" FontSize="25" Width="154" Foreground="#FF206C7B" FontFamily="Bahnschrift SemiCondensed" FontWeight="Bold"/>
-        <Button Content="Go to Cart" HorizontalAlignment="Left" Margin="698,498,0,0" VerticalAlignment="Top" FontSize="25" Width="154" Foreground="#FF206C7B" FontFamily="Bahnschrift SemiCondensed" FontWeight="Bold"/>
+        <Button x:Name="addToOrder" Content="Add to Order" HorizontalAlignment="Left" Margin="503,498,0,0" VerticalAlignment="Top" FontSize="25" Width="154" Foreground="#FF206C7B" FontFamily="Bahnschrift SemiCondensed" FontWeight="Bold" Click="addToOrder_Click"/>
+        <Button x:Name="cart" Content="Go to Cart" HorizontalAlignment="Left" Margin="698,498,0,0" VerticalAlignment="Top" FontSize="25" Width="154" Foreground="#FF206C7B" FontFamily="Bahnschrift SemiCondensed" FontWeight="Bold" Click="cart_Click"/>
+        <Label Content="Size Options" HorizontalAlignment="Left" Margin="515,392,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF4691A9"/>
+        <ComboBox x:Name="size" HorizontalAlignment="Left" Height="35" Margin="670,392,0,0" VerticalAlignment="Top" Width="179" SelectedIndex="0" FontSize="20" BorderBrush="#FFD8B7D5">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="Small 236ml"/>
+            <ComboBoxItem Content="Medium 354ml"/>
+            <ComboBoxItem Content="Large 473ml"/>
+            <ComboBoxItem Content="Extra Large 591ml"/>
+
+        </ComboBox>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="148" Margin="628,101,0,0" VerticalAlignment="Top" Width="85" Source="C:\\Users\\zz918\\OneDrive\\Desktop\\ADProject\\BubbleTea\\image\\iceTeaDemo1.png"/>
+       
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="519,432,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF4691A9"/>
+        <TextBox x:Name="quantity" HorizontalAlignment="Left" Height="35" Margin="670,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="14"/>
 
 
 

@@ -1,0 +1,30 @@
+﻿<Window x:Class="BubbleTea.Inventroy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BubbleTea"
+        mc:Ignorable="d"
+        Title="Inventroy" Height="450" Width="800">
+    <Grid>
+        <Label Content="Inventory ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Height="33" Margin="86,110,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Height="33" Margin="86,172,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Search ID" HorizontalAlignment="Left" Height="29" Margin="486,89,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="582,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.504,-0.314"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="254,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="254,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="254,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <Label Content="Unit of Measusrement" HorizontalAlignment="Left" Height="33" Margin="86,215,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Inventory" HorizontalAlignment="Left" Height="24" Margin="55,48,0,0" VerticalAlignment="Top" Width="127"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="254,221,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
+        <Button x:Name="Add" Content="Add New Product" Margin="448,143,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
+        <Button x:Name="Add_Copy" Content="Update  Product Info" Margin="448,200,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
+        <Button x:Name="Add_Copy1" Content="Delete Product" Margin="448,271,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
+        <Button x:Name="Add_Copy2" Content="Show All Product Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
+        <Label Content="Material Type" HorizontalAlignment="Left" Height="33" Margin="86,143,0,0" VerticalAlignment="Top" Width="192"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="254,151,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.494,2.251"/>
+        <Button Content="Employee Mangement" HorizontalAlignment="Left" Height="31" Margin="529,10,0,0" VerticalAlignment="Top" Width="222"/>
+
+    </Grid>
+</Window>
