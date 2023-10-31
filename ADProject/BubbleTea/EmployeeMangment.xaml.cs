@@ -25,6 +25,7 @@ namespace BubbleTea
         public EmployeeMangment()
         {
             InitializeComponent();
+       
         }
 
         public static NpgsqlConnection con;
@@ -41,12 +42,14 @@ namespace BubbleTea
                 string Query = "insert into employees values(default, @emp_lastName, @emp_firstName, @emp_phone, @emp_email, @emp_password, @emp_totalWH, @scheduled_date, @workshifts)";
                 cmd = new NpgsqlCommand(Query, con);
 
+                int workhour = int.Parse(workhours.Text);
+
                 cmd.Parameters.AddWithValue("@emp_lastName", lastName.Text);
                 cmd.Parameters.AddWithValue("@emp_firstName", firstName.Text);
                 cmd.Parameters.AddWithValue("@emp_phone", phone.Text);
                 cmd.Parameters.AddWithValue("@emp_email", email.Text);
                 cmd.Parameters.AddWithValue("@emp_password", password.Text);
-                cmd.Parameters.AddWithValue("@emp_totalWH", double.Parse(workhours.Text));
+                cmd.Parameters.AddWithValue("@emp_totalWH", workhour);
                 cmd.Parameters.AddWithValue("@scheduled_date", scheduledDate.Text);
                 cmd.Parameters.AddWithValue("@workshifts", workShifts.Text);
 
@@ -78,12 +81,14 @@ namespace BubbleTea
         {
             string host = "Host=localhost;";
             string port = "Port=5432;";
-            string dbName = "Database=Bubble TeaProject;";
+            string dbName = "Database=BubbleTeaProject;";
             string userName = "Username=postgres;";
             string password = "Password=mary790419;";
 
             string connectionstring = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             return connectionstring;
         }
+
+    
     }
 }
