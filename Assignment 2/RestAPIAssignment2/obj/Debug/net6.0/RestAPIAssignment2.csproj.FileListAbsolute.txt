@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Administrator\Desktop\Software\AD2023LC\Assignment 2\RestAPIAssignment2\obj\Debug\net6.0\RestAPIAssignment2.MvcApplicationPartsAssemblyInfo.cache

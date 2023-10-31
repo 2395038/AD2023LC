@@ -1,0 +1,18 @@
+﻿<Window x:Class="Assignment_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Farm.jpg"/>
+        </Grid.Background>
+        <RadioButton x:Name="radioOne" Content="Administration" HorizontalAlignment="Left" Margin="296,217,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold" />
+        <RadioButton x:Name="radioTwo" Content="Sales Management" HorizontalAlignment="Left" Margin="296,259,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold" />
+        <Button x:Name="selection" Content="SELECT" HorizontalAlignment="Left" Margin="297,316,0,0" VerticalAlignment="Top" FontSize="28" Height="49" Width="231" Click="selection_Click" Background="White" FontWeight="Bold" Foreground="#FF1C8627"/>
+        <Label Content="For Farmers in Montreal" HorizontalAlignment="Left" Margin="27,33,0,0" VerticalAlignment="Top" Foreground="#FF2B30AB" FontWeight="Bold" FontSize="30" FontFamily="Segoe Script"/>
+    </Grid>
+</Window>
