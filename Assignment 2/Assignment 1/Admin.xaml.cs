@@ -23,6 +23,7 @@ using static Npgsql.Replication.PgOutput.Messages.RelationMessage;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
 using System.Net.Http.Headers;
+using Assignment_1.Models;
 
 namespace Assignment_1
 {
@@ -67,7 +68,7 @@ namespace Assignment_1
             id.Text = response_JSON.product.product_id.ToString();
             amount.Text = response_JSON.product.product_amount.ToString();
             price.Text = response_JSON.product.product_price.ToString();
-            year.Text = response_JSON.product.product_year.ToString();
+            year.Text = response_JSON.product.product_date.ToString();
 
         }
 
