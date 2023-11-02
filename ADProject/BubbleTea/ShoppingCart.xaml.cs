@@ -23,5 +23,10 @@ namespace BubbleTea
         {
             InitializeComponent();
         }
+
+        private void OrderListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
