@@ -1,9 +1,13 @@
-﻿using Npgsql;
+﻿using Assignment_1.Models;
+using Newtonsoft.Json;
+using Npgsql;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,7 +19,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
-
+using System.Text.Json;
 namespace Assignment_1
 {
     /// <summary>
@@ -23,48 +27,51 @@ namespace Assignment_1
     /// </summary>
     public partial class Sales : Window
     {
+        HttpClient client = new HttpClient();
 
-        public static NpgsqlConnection con;
-
-        public static NpgsqlCommand cmd;
         public Sales()
         {
+            //initialize the client with the Rest API connection with proper server initializtion 
+
+            // step 1 : Setup the base address for our created Rest API
+
+            client.BaseAddress = new Uri("https://localhost:7058/ProductManagementControler/"); //check web address by running RestAPIAssigment2
+
+            // step 2 : we need to clear the default network packet header information 
+
+            client.DefaultRequestHeaders.Accept.Clear();
+
+            // step 3 : add our packet information to the http request 
+            client.DefaultRequestHeaders.Accept.Add(
+                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
             InitializeComponent();
             refreshPage();
         }
-        
-
-        private void establishConnect()
+        public static class MyStaticClass
         {
-            try
+            // Static list
+            public static List<double> amountList = new List<double>();
+            public static List<int> idList = new List<int>();
+            public static List<double> priceList= new List<double>();
+            // Static method to manipulate the static list
+            public static void AddToAmounList(double value)
             {
-                con = new NpgsqlConnection(get_ConnectionString());
-                MessageBox.Show("Connection Established");
+                amountList.Add(value);
             }
-            catch (NpgsqlException ex)
+            public static void AddToIdList(int value)
             {
-                MessageBox.Show(ex.Message);
+                idList.Add(value);
             }
-
-        }
-
-        private string get_ConnectionString()
-        {
-            string host = "Host=localhost;";
-            string port = "Port=5432;";
-            string dbName = "Database=VanierFall2023;";
-            string userName = "Username=postgres;";
-            string password = "Password=123;";
-
-            string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
-            return connectionString;
-
-
+            public static void AddToPriceList(double value)
+            {
+                priceList.Add(value);
+            }
         }
 
         private void Calculate_Total_Click(object sender, RoutedEventArgs e)
         {
-            double totalAmount=0;
+            double totalAmount = 0;
             int count = 0;
             List<UIElement> controlstb = new List<UIElement>();
             List<UIElement> controlslb = new List<UIElement>();
@@ -102,9 +109,13 @@ namespace Assignment_1
             MessageBox.Show("Total is " + totalAmount.ToString("C"));
         }
 
-        private void checkout_Click(object sender, RoutedEventArgs e)
+        private async void checkout_Click(object sender, RoutedEventArgs e)
 
         {
+            // conncet to API and retrive data 
+
+          
+
 
             int count = 0;
             List<UIElement> controlstb = new List<UIElement>();
@@ -129,38 +140,39 @@ namespace Assignment_1
 
             }
 
-            try
+            for (int i = 0; i < count; i++)
             {
+                TextBox txtbox = (TextBox)controlstb[i];
+                Label lb = (Label)controlslb[i];
 
-                establishConnect();
 
-                con.Open();
-
-                for (int i = 0; i < count; i++)
+                if (!string.IsNullOrEmpty(txtbox.Text) && double.TryParse(txtbox.Text, out double textBoxValue))
                 {
-                    string Query = "UPDATE products SET Amount =Amount - @amount WHERE Product_Name = @name";
+                    Product product = new Product();
 
-                    cmd = new NpgsqlCommand(Query, con);
+                    product.product_name = lb.Content.ToString();
 
-                    TextBox txtbox = (TextBox)controlstb[i];
-                    Label lb = (Label)controlslb[i];
-
-                    if (!string.IsNullOrEmpty(txtbox.Text) && double.TryParse(txtbox.Text, out double textBoxValue))
+                    if (double.TryParse(txtbox.Text, out double amountValue))
                     {
-                        cmd.Parameters.AddWithValue("@name", lb.Content.ToString());
-                        cmd.Parameters.AddWithValue("@amount", double.Parse(txtbox.Text));
+                        product.product_amount = MyStaticClass.amountList[i] - amountValue;
                     }
 
-                    cmd.ExecuteNonQuery();
-                }
-                MessageBox.Show("Product Amount Updated Successfully");
+                    product.product_id = MyStaticClass.idList[i];
+                    MessageBox.Show(MyStaticClass.idList[i].ToString() );
 
-                con.Close();
+                    product.product_price = MyStaticClass.priceList[i];
+
+                    var server_response =
+                        await client.PutAsJsonAsync("UpdateProduct", product);
+                    MessageBox.Show(server_response.ToString());
+                }
+
+           
             }
-            catch (NpgsqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            MessageBox.Show("Product Amount Updated Successfully");
+
+
+
 
         }
 
@@ -169,143 +181,146 @@ namespace Assignment_1
             refreshPage();
         }
 
-        
-        private void refreshPage()
-        {
-            //int numberOfRecords = 0;
-            try
-            {
-                establishConnect();
 
-                con.Open();
+        private async void refreshPage()
+          {
+                // clear the old data 
 
-                string Query = "select * from products";
+                  List<UIElement> controls = new List<UIElement>();
+                  foreach (UIElement ctrl in myGrid.Children)
+                  {
+                      if (ctrl is Label || ctrl is TextBox)
+                      {
+                          controls.Add(ctrl);
+                      }
 
-                cmd = new NpgsqlCommand(Query, con);
+                  }
 
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                  foreach (UIElement ctrl in controls)
+                  {
+                      myGrid.Children.Remove(ctrl);
+                  }
 
-                DataTable dt = new DataTable();
 
-                da.Fill(dt);
-                //numberOfRecords=dt.Rows.Count;
+                // conncet to API and retrive data 
 
-                //MessageBox.Show("Loading all data");
+                var server_response = await client.GetStringAsync("GetAllProducts");
 
-                con.Close();
+                Response response_JSON = JsonConvert.DeserializeObject<Response>(server_response);
 
-                List<UIElement> controls = new List<UIElement>();
-                foreach (UIElement ctrl in myGrid.Children)
-                {
-                    if (ctrl is Label || ctrl is TextBox)
-                    {
-                        controls.Add(ctrl);
-                    }
-
-                }
-
-                foreach (UIElement ctrl in controls)
-                {
-                    myGrid.Children.Remove(ctrl);
-                }
+               
 
 
 
-                int num1 = 30;
-                int num2 = 30;
-                int num3 = 30;
-                Label ProductName_label = new Label
-                {
-                    Content = "Product Name",
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Margin = new Thickness(400, 30, 0, 0),
-                    Name = "productNamelb",
-                    FontSize = 14
+            // draw user interface
+            int num1 = 30;
+                  int num2 = 30;
+                  int num3 = 30;
+                  Label ProductName_label = new Label
+                  {
+                      Content = "Product Name",
+                      HorizontalAlignment = HorizontalAlignment.Left,
+                      VerticalAlignment = VerticalAlignment.Top,
+                      Margin = new Thickness(400, 30, 0, 0),
+                      Name = "productNamelb",
+                      FontSize = 14
 
-                };
-                Label Amount_label = new Label
-                {
-                    Content = "Amount(kg)",
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Margin = new Thickness(550, 30, 0, 0),
-                    Name = "amountlb",
-                    FontSize = 14
+                  };
+                  Label Amount_label = new Label
+                  {
+                      Content = "Amount(kg)",
+                      HorizontalAlignment = HorizontalAlignment.Left,
+                      VerticalAlignment = VerticalAlignment.Top,
+                      Margin = new Thickness(550, 30, 0, 0),
+                      Name = "amountlb",
+                      FontSize = 14
 
-                };
-
-
-                Label PriceList_label = new Label
-                {
-                    Content = "Price(CAD/kg)",
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Margin = new Thickness(700, 30, 0, 0),
-                    Name = "pricelistlb",
-                    FontSize = 14
-
-                };
-
-                myGrid.Children.Add(ProductName_label);
-                myGrid.Children.Add(PriceList_label);
-                myGrid.Children.Add(Amount_label);
-
-                foreach (DataRow row in dt.Rows)
-                {
-                    int i = 0;
-
-                    string productName = row["Product_Name"].ToString();
-
-                    string price = row["Price"].ToString();
-
-                    Label Product_label = new Label
-                    {
-                        Content = productName,
-                        HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment = VerticalAlignment.Top,
-                        Margin = new Thickness(400, num1 += 30, 0, 0),
-                        Name = "productlb" + i
-
-                    };
-
-                    TextBox amount = new TextBox
-                    {
-
-                        HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment = VerticalAlignment.Top,
-                        Margin = new Thickness(550, num3 += 30, 0, 0),
-                        Name = "Amount" + i,
-                        Width = 88
-
-                    };
-
-                    Label Price_label = new Label
-                    {
-                        Content = price,
-                        HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment = VerticalAlignment.Top,
-                        Margin = new Thickness(700, num2 += 30, 0, 0),
-                        Name = "pricelb" + i
-
-                    };
-                    myGrid.Children.Add(Product_label);
-                    myGrid.Children.Add(Price_label);
-                    myGrid.Children.Add(amount);
-
-                }
+                  };
 
 
+                  Label PriceList_label = new Label
+                  {
+                      Content = "Price(CAD/kg)",
+                      HorizontalAlignment = HorizontalAlignment.Left,
+                      VerticalAlignment = VerticalAlignment.Top,
+                      Margin = new Thickness(700, 30, 0, 0),
+                      Name = "pricelistlb",
+                      FontSize = 14
 
-            }
-            catch (NpgsqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                  };
+
+                  myGrid.Children.Add(ProductName_label);
+                  myGrid.Children.Add(PriceList_label);
+                  myGrid.Children.Add(Amount_label);
+
+                   double newAmount = 0;
+            //List<Double> amountList = new List<Double>();
+                    int newId = 0; 
+                    double newPrice = 0;
+            // fill the data with API response 
+            foreach (Product product in response_JSON.products)
+                  {
+                      int i = 0;
+
+                      string productName = product.product_name.ToString();
+
+                      string price = product.product_price.ToString();
+
+                      newAmount = product.product_amount;
+                      newId=product.product_id;
+                      newPrice = product.product_price;
+                    MyStaticClass.AddToAmounList(newAmount);
+                    MyStaticClass.AddToIdList(newId);
+                    MyStaticClass.AddToPriceList(newPrice);
+
+                // test static list
+               // MessageBox.Show(MyStaticClass.idList[0].ToString());
+
+
+                Label Product_label = new Label
+                      {
+                          Content = productName,
+                          HorizontalAlignment = HorizontalAlignment.Left,
+                          VerticalAlignment = VerticalAlignment.Top,
+                          Margin = new Thickness(400, num1 += 30, 0, 0),
+                          Name = "productlb" + i
+
+                      };
+
+                      TextBox amount = new TextBox
+                      {
+
+                          HorizontalAlignment = HorizontalAlignment.Left,
+                          VerticalAlignment = VerticalAlignment.Top,
+                          Margin = new Thickness(550, num3 += 30, 0, 0),
+                          Name = "Amount" + i,
+                          Width = 88
+
+                      };
+
+                      Label Price_label = new Label
+                      {
+                          Content = price,
+                          HorizontalAlignment = HorizontalAlignment.Left,
+                          VerticalAlignment = VerticalAlignment.Top,
+                          Margin = new Thickness(700, num2 += 30, 0, 0),
+                          Name = "pricelb" + i
+
+                      };
+                      myGrid.Children.Add(Product_label);
+                      myGrid.Children.Add(Price_label);
+                      myGrid.Children.Add(amount);
+
+             }
+
+           
         }
+
+      
+    } 
     }
-    
 
 
+
     
-}
+

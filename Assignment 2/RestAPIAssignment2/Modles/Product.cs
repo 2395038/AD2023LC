@@ -6,6 +6,6 @@
         public int product_id { get; set; }
         public double product_amount { get; set; }
         public double product_price { get; set; }
-        public string product_date { get; set; }
+       
     }
 }

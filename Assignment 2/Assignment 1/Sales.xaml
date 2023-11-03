@@ -28,8 +28,7 @@
         <Label Content="2.35" HorizontalAlignment="Left" Margin="626,129,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.526,1.948"/>
         <Label Content="1.45" HorizontalAlignment="Left" Margin="626,162,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.526,1.948"/>
         <Label Content="2.22" HorizontalAlignment="Left" Margin="626,194,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.526,1.948"/>
-        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Height="28" Margin="25,10,0,0" VerticalAlignment="Top" Width="153" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold" Foreground="#FF953F67" Click="update_Click"/>
-        <Button x:Name="update_Copy" Content="Update" HorizontalAlignment="Left" Height="28" Margin="25,10,0,0" VerticalAlignment="Top" Width="153" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold" Foreground="#FF953F67" Click="update_Click"/>
-        <Button x:Name="checkout" Content="Check Out" HorizontalAlignment="Left" Height="28" Margin="303,367,0,0" VerticalAlignment="Top" Width="153" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold" Foreground="#FF953F67" Click="checkout_Click"/>
+        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Height="28" Margin="25,10,0,0" VerticalAlignment="Top" Width="153" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold" Foreground="#FF953F67" Click="update_Click" />
+        <Button x:Name="checkout" Content="Check Out" HorizontalAlignment="Left" Height="28" Margin="303,367,0,0" VerticalAlignment="Top" Width="153" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold" Foreground="#FF953F67" Click="checkout_Click" />
     </Grid>
 </Window>

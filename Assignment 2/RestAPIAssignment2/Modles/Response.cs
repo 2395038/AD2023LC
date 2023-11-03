@@ -12,5 +12,7 @@
 
         // response can have list of students from the database
         public List<Product> products { get; set; }
+
+       // public Response() { }
     }
 }

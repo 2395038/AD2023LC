@@ -26,11 +26,11 @@ namespace RestAPIAssignment2.Modles
                 {
                     Product product = new Product();
 
-                    product.product_name = (string)dt.Rows[i]["product_name"];
-                    product.product_id = (int)dt.Rows[i]["product_id"];
-                    product.product_amount = (double)dt.Rows[i]["product_amount"];
-                    product.product_price = (double)dt.Rows[i]["product_price"];
-                    product.product_date = (string)dt.Rows[i]["product_date"];
+                    product.product_name = (string)dt.Rows[i]["Product_Name"];
+                    product.product_id = (int)dt.Rows[i]["Product_ID"];
+                    product.product_amount = (double)dt.Rows[i]["Amount"];
+                    product.product_price = (double)dt.Rows[i]["Price"];
+                   
 
                     products.Add(product);
                 }
@@ -67,11 +67,11 @@ namespace RestAPIAssignment2.Modles
             if (dt.Rows.Count > 0) 
             {
                 Product product = new Product();
-                product.product_id = (int)dt.Rows[0]["product_id"];
-                product.product_name = (string)dt.Rows[0]["product_name"];
-                product.product_amount = (double)dt.Rows[0]["product_amount"];
-                product.product_price = (double)dt.Rows[0]["product_price"];
-                product.product_date = (string)dt.Rows[0]["product_date"];
+                product.product_name = (string)dt.Rows[0]["Product_Name"];
+                product.product_id = (int)dt.Rows[0]["Product_ID"];
+                product.product_amount = (double)dt.Rows[0]["Amount"];
+                product.product_price = (double)dt.Rows[0]["Price"];
+
 
                 response.statusCode = 200;
                 response.messageCode = "Successfully Retrieved";
@@ -92,13 +92,14 @@ namespace RestAPIAssignment2.Modles
         {
             con.Open();
             Response response = new Response();
-            string Query = "insert into products values(@product_name, default, @product_amount, " +
-                "@product_price, @product_date)";
+            string Query = "insert into products values(@Product_Name, @Product_ID, @Amount, " +
+                "@Price)";
             NpgsqlCommand cmd = new NpgsqlCommand(Query, con);
-            cmd.Parameters.AddWithValue("@product_name", product.product_name);
-            cmd.Parameters.AddWithValue("@product_amount", product.product_amount);
-            cmd.Parameters.AddWithValue("@product_price", product.product_price);
-            cmd.Parameters.AddWithValue("@product_date", product.product_date);
+            cmd.Parameters.AddWithValue("@Product_Name", product.product_name);
+            cmd.Parameters.AddWithValue("@Product_ID", product.product_id);
+            cmd.Parameters.AddWithValue("@Amount", product.product_amount);
+            cmd.Parameters.AddWithValue("@Price", product.product_price);
+           
 
             int i = cmd.ExecuteNonQuery();
 
@@ -124,13 +125,12 @@ namespace RestAPIAssignment2.Modles
         {
             con.Open();
             Response response = new Response();
-            string Query = "Update products set product_name=@name, product_amount=@amount" +
-                ", product_price=@price, product_date=@year where product_id=@ID";
+            string Query = "Update products Set Product_Name=@name, Amount=@amount" +
+                ", Price=@price where Product_ID=@ID";
             NpgsqlCommand cmd = new NpgsqlCommand(Query, con);
             cmd.Parameters.AddWithValue("@name", product.product_name);
             cmd.Parameters.AddWithValue("@amount", product.product_amount);
             cmd.Parameters.AddWithValue("@price", product.product_price);
-            cmd.Parameters.AddWithValue("@year", product.product_date);
             cmd.Parameters.AddWithValue("@ID", product.product_id);
 
             int i = cmd.ExecuteNonQuery();
@@ -154,7 +154,7 @@ namespace RestAPIAssignment2.Modles
         {
             con.Open();
             Response response = new Response();
-            string Query = "Delete from products where product_id='" + id + "'";
+            string Query = "Delete from products where Product_ID='" + id + "'";
             NpgsqlCommand cmd = new NpgsqlCommand(Query, con);
 
             int i = cmd.ExecuteNonQuery();

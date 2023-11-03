@@ -1,18 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 using RestAPIAssignment2.Modles;
-using RestAPIAssignment2.Modles;
 using System.Security.Cryptography;
 
 namespace RestAPIAssignment2.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ProductManagement : ControllerBase
+    public class ProductManagementControler : ControllerBase
     {
         private readonly IConfiguration _configuration;
 
-        public ProductManagement(IConfiguration configuration)
+        public ProductManagementControler(IConfiguration configuration)
         {
             _configuration = configuration;
         }

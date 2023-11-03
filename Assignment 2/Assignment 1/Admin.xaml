@@ -29,14 +29,13 @@
             <TextBox x:Name="amount" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="101" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy2"  Content="Price (CAD)/kg" FontSize="14" Canvas.Left="10" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Foreground="Yellow" FontWeight="Bold"/>
             <TextBox x:Name="price" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="145" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy3"  Content="Date" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Yellow" FontWeight="Bold"/>
-            <TextBox x:Name="year" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+      
         </Canvas>
         <StackPanel Grid.Column="2" Margin="1,0,0,4" Grid.Row="1">
-            <Button x:Name="insert" Content="INSERT" Background="#FFFDB800" FontSize="16" Height="44" Click="insert_Click" Foreground="Yellow" FontWeight="Bold"/>
-            <Button x:Name="Select" Content="SELECT" Height="44" Background="Yellow" FontSize="15" Click="Select_Click" FontWeight="Bold" Foreground="#FFFDB800"/>
-            <Button x:Name="update" Content="UPDATE" Background="#FFFDB800" FontSize="16" Height="44" Foreground="Yellow" FontWeight="Bold" Click="update_Click"/>
-            <Button x:Name="Delete" Content="DELETE" Height="44" Background="Yellow" FontSize="15" FontWeight="Bold" Foreground="#FFFDB800" Click="Delete_Click"/>
+            <Button x:Name="insert" Content="INSERT" Background="#FFFDB800" FontSize="16" Height="44"  Foreground="Yellow" FontWeight="Bold" Click="insert_Click"/>
+            <Button x:Name="Select" Content="SELECT" Height="44" Background="Yellow" FontSize="15"  FontWeight="Bold" Foreground="#FFFDB800" Click="Select_Click"/>
+            <Button x:Name="update" Content="UPDATE" Background="#FFFDB800" FontSize="16" Height="44" Foreground="Yellow" FontWeight="Bold" Click="update_Click" />
+            <Button x:Name="Delete" Content="DELETE" Height="44" Background="Yellow" FontSize="15" FontWeight="Bold" Foreground="#FFFDB800" Click="Delete_Click" />
             <Button x:Name="show" Content="SHOW ALL PRODUCTS" Background="#FFFDB800" FontSize="16" Height="44" Click="show_Click" FontWeight="Bold" Foreground="Yellow"/>
         </StackPanel>
         <TextBox x:Name="search" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Margin="116,0,0,0" Height="18" Background="Yellow" FontSize="15" />
