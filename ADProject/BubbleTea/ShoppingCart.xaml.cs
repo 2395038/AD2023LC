@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace BubbleTea
 {
     /// <summary>
-    /// ShoppingCart.xaml 的交互逻辑
+    /// ShoppingCart.xaml 的交互逻辑 a XZSSSSSSS
     /// </summary>
     public partial class ShoppingCart : Window
     {

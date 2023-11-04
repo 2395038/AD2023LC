@@ -5,21 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="EmployeeInfo" Height="450" Width="800">
+        Title="EmployeeInfo" Height="600" Width="600">
     <Grid Background="#FFFFC1CC">
 
-        <Label Content="Employee ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Height="33" Margin="86,184,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="work secheule" HorizontalAlignment="Left" Height="33" Margin="86,297,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="Work secheule" HorizontalAlignment="Left" Height="33" Margin="400,72,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="total work hrs " HorizontalAlignment="Left" Height="33" Margin="86,245,0,0" VerticalAlignment="Top" Width="137"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,192,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,254,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="245,306,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94"/>
-        <Label Content="EmployeeInfo" HorizontalAlignment="Left" Height="34" Margin="258,22,0,0" VerticalAlignment="Top" Width="246"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="243*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="382*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Employee Information" HorizontalAlignment="Left" Margin="19,111,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="55" Width="278" Foreground="black" FontWeight="Bold"/>
+        <Canvas Background="#FFFFC1CC" Margin="63,49,10,0" Grid.ColumnSpan="2" Grid.Row="1">
+            <Label x:Name="idlb"  Content="Employee ID" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="10" Canvas.Top="8" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="id" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="12" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="lnamelb"  Content="Last Name" FontSize="14" Canvas.Left="10" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="lname" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="56" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy1"  Content="First Name" FontSize="14" Canvas.Left="10" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+            <TextBox x:Name="fname" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="101" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy2"  Content="Email" FontSize="14" Canvas.Left="10" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="email" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="145" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy3"  Content="Phone" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" Width="132"/>
+            <TextBox x:Name="phone" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy4"  Content="Department" FontSize="14" Canvas.Left="10" Canvas.Top="230" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="dept" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="234" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+        <StackPanel Grid.Column="3" Margin="1,32,0,4" Grid.Row="1"/>
 
     </Grid>
 </Window>

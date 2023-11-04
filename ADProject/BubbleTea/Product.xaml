@@ -5,25 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="Product" Height="450" Width="800">
-    <Grid Background="Pink">
-        <Label Content="Product ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Product Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Product Price" HorizontalAlignment="Left" Height="33" Margin="86,172,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Search ID" HorizontalAlignment="Left" Height="29" Margin="486,89,0,0" VerticalAlignment="Top" Width="116"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="582,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.504,-0.314"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <Label Content="Ingredients" HorizontalAlignment="Left" Height="33" Margin="86,210,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Product Info" HorizontalAlignment="Left" Height="24" Margin="55,48,0,0" VerticalAlignment="Top" Width="127"/>
-        <Label Content="Product Amount" HorizontalAlignment="Left" Height="33" Margin="86,243,0,0" VerticalAlignment="Top" Width="192"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="216,221,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="216,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
-        <Button x:Name="Add" Content="Add New Product"  Margin="448,143,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
-        <Button x:Name="Add_Copy" Content="Update  Product Info" Margin="448,200,0,0" VerticalAlignment="Top"   Width="255" Height="34"/>
-        <Button x:Name="Add_Copy1" Content="Delete Product" Margin="448,271,0,0" VerticalAlignment="Top"  Width="255" Height="34"/>
-        <Button x:Name="Add_Copy2" Content="Show All Product Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255" Height="34"/>
+        Title="Product" Height="600" Width="800">
+    <Grid Background="#FFFFC1CC">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="112*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="450*"/>
+            <ColumnDefinition Width="410*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Product Mangement System" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="54" Width="359" Foreground="black" FontWeight="Bold"/>
+        <Canvas Background="#FFFFC1CC" Margin="0,0,334,63" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Label x:Name="label1"  Content="Product ID" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="10" Canvas.Top="8" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="id" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="12" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="label1_Copy"  Content="Product Name" FontSize="14" Canvas.Left="10" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="name" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="56" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy1"  Content="Price" FontSize="14" Canvas.Left="10" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+            <TextBox x:Name="price" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="101" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy2"  Content="Ingredients" FontSize="14" Canvas.Left="10" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="ing" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="145" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy3"  Content="Category" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" Width="132"/>
+            <TextBox x:Name="category" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="categarylb"  Content="" FontSize="14" Canvas.Left="10" Canvas.Top="230" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+        <StackPanel Grid.Column="2" Margin="1,0,0,4" Grid.Row="1">
+            <Button x:Name="insert" Content="INSERT" Background="white" FontSize="16" Height="48"  Foreground="Black" FontWeight="Bold" Click="insert_Click"/>
+            <Button x:Name="Select" Content="SELECT" Height="44" Background="Pink" FontSize="15"  FontWeight="Bold" Foreground="Black" Click="Select_Click"/>
+            <Button x:Name="update" Content="UPDATE" Background="white" FontSize="16" Height="44" Foreground="Black" FontWeight="Bold" Click="update_Click"/>
+            <Button x:Name="Delete" Content="DELETE" Height="44" Background="Pink" FontSize="15" FontWeight="Bold" Foreground="Black" Click="Delete_Click" />
+            <Button x:Name="show" Content="SHOW ALL PORDUCTS" Background="white" FontSize="16" Height="44"  FontWeight="Bold" Foreground="Black" Click="show_Click"/>
+        </StackPanel>
+        <TextBox x:Name="search" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="168,46,0,0" Height="18" Background="white" FontSize="15" />
+        <Label x:Name="label2" Grid.Column="2" Content="Search ID" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="30" Width="101" Margin="47,42,0,0" Background="#FFFEFEFE" Foreground="Black"/>
+        <DataGrid x:Name="dataGrid" Grid.Row="1" Grid.ColumnSpan="2" Margin="4,237,10,10" Grid.RowSpan="2" Background="#FFFFC1CC" Foreground="Black" Grid.Column="1"/>
 
     </Grid>
 </Window>

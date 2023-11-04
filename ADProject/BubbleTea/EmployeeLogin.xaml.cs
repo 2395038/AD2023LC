@@ -22,6 +22,7 @@ using static Npgsql.Replication.PgOutput.Messages.RelationMessage;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
 using System.Diagnostics;
+using System.Numerics;
 
 namespace BubbleTea
 {
@@ -34,18 +35,24 @@ namespace BubbleTea
         {
             InitializeComponent();
         }
-      
 
         public static NpgsqlConnection con;
 
         public static NpgsqlCommand cmd;
 
-
-        private void EstablishConnect()
+        /*public static class EmployeeClass {
+           public static string employee_id { get; set; }
+            public  static string last_name { get; set; }
+            public static string first_name { get; set; }
+            public static string email { get; set; }
+            public static BigInteger phone { get; set; }
+            public static string dept { get; set; }
+        }*/
+        private void establishConnect()
         {
             try
             {
-                con = new NpgsqlConnection(Get_ConnectionString());
+                con = new NpgsqlConnection(get_ConnectionString());
                 MessageBox.Show("Connection Established");
             }
             catch (NpgsqlException ex)
@@ -55,11 +62,24 @@ namespace BubbleTea
 
         }
 
+        private string get_ConnectionString()
+        {
+            string host = "Host=localhost;";
+            string port = "Port=5432;";
+            string dbName = "Database=VanierFall2023;";
+            string userName = "Username=postgres;";
+            string password = "Password=123;";
+
+            string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
+            return connectionString;
+
+
+        }
         private string Get_ConnectionString()
         {
             string host = "Host=localhost;";
             string port = "Port=5432;";
-            string dbName = "Database=ADPorject;";
+            string dbName = "Database=VanierFall2023;";
             string userName = "Username=postgres;";
             string password = "Password=123;";
 
@@ -69,28 +89,43 @@ namespace BubbleTea
 
         }
 
-        
-    private void Button_Click(object sender, RoutedEventArgs e)
+
+        public static List<string> EmployeeClass = new List<string>();
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             EmployeeInfo employeeInfo = new EmployeeInfo();
             try
             {
-                EstablishConnect();
+                establishConnect();
 
                 con.Open();
 
-                string Query = "select * from login where employee_id = @id";
+                string Query = "select * from employee where employee_id = @id";
 
                 cmd = new NpgsqlCommand(Query, con);
 
-                cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
+                cmd.Parameters.AddWithValue("@id", id.Text);
 
+                bool noData = true;
 
                 NpgsqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
 
-                if(id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString())
-                { 
-                    
+
+
+
+
+                if (id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString())
+                {
+
+
+                    EmployeeClass.Add(dr["employee_id"].ToString());
+                    EmployeeClass.Add(dr["last_name"].ToString());
+                    EmployeeClass.Add(dr["first_name"].ToString());
+                    EmployeeClass.Add(dr["email"].ToString());
+                    EmployeeClass.Add(dr["phone"].ToString());
+                    EmployeeClass.Add(dr["department"].ToString());
+                    MessageBox.Show(EmployeeClass[0]);
                     employeeInfo.Show();
 
                 }
@@ -104,16 +139,63 @@ namespace BubbleTea
             {
                 MessageBox.Show(ex.Message);
             }
+
             employeeInfo.Show();
+
             this.Close();
 
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e, Admin admin)
         {
-            Admin admin = new Admin();  
-            admin.Show();
-            this.Close();
+            Admin admin1 = new Admin();
+
+            try
+            {
+                establishConnect();
+
+                con.Open();
+
+                string Query = "select * from employee where employee_id = @id";
+
+                cmd = new NpgsqlCommand(Query, con);
+
+                cmd.Parameters.AddWithValue("@id", id.Text);
+
+                bool noData = true;
+
+                NpgsqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+
+
+
+
+
+                if (id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString())
+                {
+
+
+                    EmployeeClass.Add(dr["employee_id"].ToString());
+                    EmployeeClass.Add(dr["last_name"].ToString());
+                    EmployeeClass.Add(dr["first_name"].ToString());
+                    EmployeeClass.Add(dr["email"].ToString());
+                    EmployeeClass.Add(dr["phone"].ToString());
+                    EmployeeClass.Add(dr["department"].ToString());
+                    MessageBox.Show(EmployeeClass[0]);
+                    admin1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("ID or Passwrod not correct");
+                }
+                con.Close();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

@@ -5,43 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubbleTea"
         mc:Ignorable="d"
-        Title="EmployeeMangment" Height="755" Width="811">
-    <Grid Background="#FFFFC1CC" Margin="0,0,0,-83">
-        <Label Content="Employee ID" HorizontalAlignment="Left" Height="33" Margin="86,72,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Height="33" Margin="86,123,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Height="33" Margin="86,172,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="33" Margin="86,277,0,0" VerticalAlignment="Top" Width="192" RenderTransformOrigin="0.496,0.754"/>
-        <Label Content="Work Secheule" HorizontalAlignment="Left" Height="33" Margin="76,477,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Search ID" HorizontalAlignment="Left" Height="29" Margin="486,89,0,0" VerticalAlignment="Top" Width="116"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="588,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="216,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox x:Name="lastName" HorizontalAlignment="Left" Height="21" Margin="216,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox x:Name="firstName" HorizontalAlignment="Left" Height="21" Margin="216,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox x:Name="password" HorizontalAlignment="Left" Height="21" Margin="216,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox x:Name="workhours" HorizontalAlignment="Left" Height="21" Margin="216,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <Label Content="Total work Hrs " HorizontalAlignment="Left" Height="33" Margin="86,322,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Phone " HorizontalAlignment="Left" Height="33" Margin="86,210,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Employee Info" HorizontalAlignment="Left" Height="24" Margin="55,48,0,0" VerticalAlignment="Top" Width="127"/>
-        <Label Content="Email " HorizontalAlignment="Left" Height="33" Margin="86,243,0,0" VerticalAlignment="Top" Width="192"/>
-        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="22" Margin="216,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Height="22" Margin="216,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <Button x:Name="Add"  HorizontalAlignment="Left" Height="34"  Content="Add New Employee Info" Margin="448,143,0,0" VerticalAlignment="Top" Width="255" Click="Add_Click"/>
-        <Button x:Name="Update" HorizontalAlignment="Left" Height="34"  Content="Update Employee Info" Margin="448,200,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button x:Name="Delete" HorizontalAlignment="Left" Height="34"  Content="Delete Employee Info" Margin="448,271,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button x:Name="Show_All" HorizontalAlignment="Left" Height="34"  Content="Show All Employee Info" Margin="448,328,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button Content="Product Management"  HorizontalAlignment="Left" Height="34" Margin="512,26,0,0" VerticalAlignment="Top" Width="255"/>
-        <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,515,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <DataGrid HorizontalAlignment="Center" Height="126" Margin="0,664,0,0" VerticalAlignment="Top" Width="654" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Label Content="Schedule Arrangement" HorizontalAlignment="Left" Height="28" Margin="78,371,0,0" VerticalAlignment="Top" Width="152"/>
-        <DatePicker x:Name="scheduledDate" HorizontalAlignment="Left" Height="28" Margin="216,404,0,0" VerticalAlignment="Top" Width="122"/>
-        <ComboBox x:Name="workShifts" HorizontalAlignment="Left" Height="26" Margin="216,437,0,0" VerticalAlignment="Top" Width="122">
-            <ComboBoxItem Content="9:00--12:00"/>
-            <ComboBoxItem Content="12:00--3:00"/>
-            <ComboBoxItem Content="3:00--6:00"/>
-        </ComboBox>
-        <Label Content="Date" HorizontalAlignment="Left" Height="28" Margin="78,404,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label Content="Work Shifts" HorizontalAlignment="Left" Height="28" Margin="78,437,0,0" VerticalAlignment="Top" Width="114"/>
-        <Button Content="Show the Week Work Schedule" HorizontalAlignment="Left" Height="38" Margin="450,394,0,0" VerticalAlignment="Top" Width="253" />
+        Title="EmployeeMangment" Height="600" Width="811">
+    <Grid Background="#FFFFC1CC">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="112*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="372*"/>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Employee Mangement System" HorizontalAlignment="Left" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="55" Width="382" Foreground="black" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Canvas Background="#FFFFC1CC" Margin="0,0,338,4" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <Label x:Name="idlb"  Content="Employee ID" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="10" Canvas.Top="8" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="id" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="12" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="lnamelb"  Content="Last Name" FontSize="14" Canvas.Left="10" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="lname" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="56" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy1"  Content="First Name" FontSize="14" Canvas.Left="10" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+            <TextBox x:Name="fname" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="101" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy2"  Content="Email" FontSize="14" Canvas.Left="10" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Foreground="Black" FontWeight="Bold"/>
+            <TextBox x:Name="email" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="145" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy3"  Content="Phone" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" Width="132"/>
+            <TextBox x:Name="phone" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy4"  Content="Department" FontSize="14" Canvas.Left="10" Canvas.Top="230" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="dept" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="234" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy"  Content="Password" FontSize="14" Canvas.Left="10" Canvas.Top="277" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="password" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="281" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+        <StackPanel Grid.Column="2" Margin="1,32,0,4" Grid.Row="1">
+            <Button x:Name="insert" Content="INSERT" Background="white" FontSize="16" Height="48" Click="insert_Click" Foreground="Black" FontWeight="Bold"/>
+            <Button x:Name="Select" Content="SELECT" Height="44" Background="Pink" FontSize="15" Click="Select_Click" FontWeight="Bold" Foreground="Black"/>
+            <Button x:Name="update" Content="UPDATE" Background="white" FontSize="16" Height="44" Foreground="Black" FontWeight="Bold" Click="update_Click"/>
+            <Button x:Name="Delete" Content="DELETE" Height="44" Background="Pink" FontSize="15" FontWeight="Bold" Foreground="Black" Click="Delete_Click"/>
+            <Button x:Name="show" Content="SHOW ALL EMPLOYEES" Background="white" FontSize="16" Height="44" Click="show_Click" FontWeight="Bold" Foreground="Black"/>
+        </StackPanel>
+        <TextBox x:Name="search" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="174,62,0,0" Height="18" Background="white" FontSize="15" />
+        <Label x:Name="label2" Grid.Column="2" Content="Search ID" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="30" Width="101" Margin="41,56,0,0" Background="#FFFEFEFE" Foreground="Black"/>
+        <DataGrid x:Name="dataGrid" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,0,28" Background="#FFFFC1CC" Foreground="Black" Grid.Column="1"/>
 
     </Grid>
 </Window>
