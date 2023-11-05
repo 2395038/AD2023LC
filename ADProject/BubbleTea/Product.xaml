@@ -20,7 +20,7 @@
             <ColumnDefinition Width="60*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Product Mangement System" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="54" Width="359" Foreground="black" FontWeight="Bold"/>
+        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Product Management System" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="54" Width="359" Foreground="black" FontWeight="Bold"/>
         <Canvas Background="#FFFFC1CC" Margin="0,0,334,63" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Label x:Name="label1"  Content="Product ID" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="10" Canvas.Top="8" Foreground="Black" FontWeight="Bold"/>
             <TextBox x:Name="id" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="12" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>

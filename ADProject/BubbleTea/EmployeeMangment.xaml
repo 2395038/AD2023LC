@@ -20,7 +20,7 @@
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Employee Mangement System" HorizontalAlignment="Left" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="55" Width="382" Foreground="black" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Grid.Column="1" Grid.Row="0" Content="Employee Management System" HorizontalAlignment="Left" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="24" Background="pink" Height="55" Width="382" Foreground="black" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Canvas Background="#FFFFC1CC" Margin="0,0,338,4" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
             <Label x:Name="idlb"  Content="Employee ID" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="10" Canvas.Top="8" Foreground="Black" FontWeight="Bold"/>
             <TextBox x:Name="id" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="12" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
