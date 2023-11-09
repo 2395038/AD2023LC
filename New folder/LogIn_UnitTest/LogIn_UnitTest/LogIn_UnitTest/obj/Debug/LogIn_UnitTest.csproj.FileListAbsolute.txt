@@ -1,5 +1,0 @@
-C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\LogIn_UnitTest\LogIn_UnitTest\LogIn_UnitTest\obj\Debug\LogIn_UnitTest.csproj.AssemblyReference.cache
-C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\LogIn_UnitTest\LogIn_UnitTest\LogIn_UnitTest\obj\Debug\MainWindow.g.cs
-C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\LogIn_UnitTest\LogIn_UnitTest\LogIn_UnitTest\obj\Debug\App.g.cs
-C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\LogIn_UnitTest\LogIn_UnitTest\LogIn_UnitTest\obj\Debug\LogIn_UnitTest_MarkupCompile.cache
-C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\LogIn_UnitTest\LogIn_UnitTest\LogIn_UnitTest\obj\Debug\LogIn_UnitTest_MarkupCompile.lref

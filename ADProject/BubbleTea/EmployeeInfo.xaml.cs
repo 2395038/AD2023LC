@@ -32,25 +32,27 @@ namespace BubbleTea
     /// </summary>
     public partial class EmployeeInfo : Window
     {
-        public EmployeeInfo()
+        Employee emp { get; set; }
+        private EmployeeInfo()
         {
             InitializeComponent();
+            
+        }
+        public EmployeeInfo(Employee e) :this()
+        {
+            emp = e;
             AddValues();
-
-
-
-
         }
 
         public void AddValues()
         {
-            MessageBox.Show(Employee.emp_lname);
-            id.Text = "1001";
-            lname.Text = Employee.emp_lname;
-            fname.Text = Employee.emp_fname;
-            email.Text = Employee.emp_email;
-            phone.Text =Employee.emp_phone.ToString();
-            dept.Text = Employee.emp_dept;
+            MessageBox.Show(emp.emp_lname);
+            id.Text = emp.emp_id;
+            lname.Text = emp.emp_lname;
+            fname.Text = emp.emp_fname;
+            email.Text = emp.emp_email;
+            phone.Text = emp.emp_phone.ToString();
+            dept.Text = emp.emp_dept;
         }
 
 

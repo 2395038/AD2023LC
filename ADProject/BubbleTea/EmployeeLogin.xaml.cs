@@ -82,7 +82,7 @@ namespace BubbleTea
        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeInfo employeeInfo = new EmployeeInfo();
+            
             
             try
             {
@@ -107,15 +107,17 @@ namespace BubbleTea
 
                 if (id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString())
                 {
+                    Employee emp = new Employee();
 
+                    emp.emp_id=dr["employee_id"].ToString();
+                    emp.emp_lname=dr["last_name"].ToString();
+                    emp.emp_fname=dr["first_name"].ToString();
+                    emp.emp_email=dr["email"].ToString();
+                    emp.emp_phone=(long)dr["phone"];
+                    emp.emp_dept=dr["department"].ToString();
 
-                    Employee.emp_id=dr["employee_id"].ToString();
-                    Employee.emp_lname=dr["last_name"].ToString();
-                    Employee.emp_fname=dr["first_name"].ToString();
-                    Employee.emp_email=dr["email"].ToString();
-                    Employee.emp_phone=(long)dr["phone"];
-                    Employee.emp_dept=dr["department"].ToString();
-                    MessageBox.Show(Employee.emp_dept);
+                    MessageBox.Show(emp.emp_dept);
+                    EmployeeInfo employeeInfo = new EmployeeInfo(emp);
                     employeeInfo.Show();
 
                 }
@@ -130,7 +132,7 @@ namespace BubbleTea
                 MessageBox.Show(ex.Message);
             }
 
-            employeeInfo.Show();
+            //employeeInfo.Show();
 
             this.Close();
 

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "9utqaD/teoQxEVCaxjqAy6zHoZmNkfWZdF8F3+yfmjh8Tub3zJGhVZC0XGvN1+Ue70gQHmLVyeF53A/WAVtVFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\LogIn_UTest\\LogInPage_UnitTest\\LogInPage_UnitTest\\LogInPage_UnitTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zz918\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\zz918\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
+    "C:\\Users\\zz918\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
