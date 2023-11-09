@@ -23,6 +23,7 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
 using System.Diagnostics;
 using System.Numerics;
+using BubbleTea.Modles;
 
 namespace BubbleTea
 {
@@ -75,25 +76,14 @@ namespace BubbleTea
 
 
         }
-        private string Get_ConnectionString()
-        {
-            string host = "Host=localhost;";
-            string port = "Port=5432;";
-            string dbName = "Database=VanierFall2023;";
-            string userName = "Username=postgres;";
-            string password = "Password=123;";
-
-            string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
-            return connectionString;
+      
 
 
-        }
-
-
-        public static List<string> EmployeeClass = new List<string>();
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             EmployeeInfo employeeInfo = new EmployeeInfo();
+            
             try
             {
                 establishConnect();
@@ -119,13 +109,13 @@ namespace BubbleTea
                 {
 
 
-                    EmployeeClass.Add(dr["employee_id"].ToString());
-                    EmployeeClass.Add(dr["last_name"].ToString());
-                    EmployeeClass.Add(dr["first_name"].ToString());
-                    EmployeeClass.Add(dr["email"].ToString());
-                    EmployeeClass.Add(dr["phone"].ToString());
-                    EmployeeClass.Add(dr["department"].ToString());
-                    MessageBox.Show(EmployeeClass[0]);
+                    Employee.emp_id=dr["employee_id"].ToString();
+                    Employee.emp_lname=dr["last_name"].ToString();
+                    Employee.emp_fname=dr["first_name"].ToString();
+                    Employee.emp_email=dr["email"].ToString();
+                    Employee.emp_phone=(long)dr["phone"];
+                    Employee.emp_dept=dr["department"].ToString();
+                    MessageBox.Show(Employee.emp_dept);
                     employeeInfo.Show();
 
                 }
@@ -147,10 +137,10 @@ namespace BubbleTea
         }
 
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e, Admin admin)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            Admin admin1 = new Admin();
-
+            Admin admin = new Admin();
+           
             try
             {
                 establishConnect();
@@ -167,23 +157,10 @@ namespace BubbleTea
 
                 NpgsqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
-
-
-
-
-
-                if (id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString())
+                if (id.Text == dr["employee_id"].ToString() && PIN.Text == dr["password"].ToString()&&dr["department"].ToString()=="admin")
                 {
 
-
-                    EmployeeClass.Add(dr["employee_id"].ToString());
-                    EmployeeClass.Add(dr["last_name"].ToString());
-                    EmployeeClass.Add(dr["first_name"].ToString());
-                    EmployeeClass.Add(dr["email"].ToString());
-                    EmployeeClass.Add(dr["phone"].ToString());
-                    EmployeeClass.Add(dr["department"].ToString());
-                    MessageBox.Show(EmployeeClass[0]);
-                    admin1.Show();
+                    admin.Show();
                 }
                 else
                 {
@@ -195,7 +172,8 @@ namespace BubbleTea
             {
                 MessageBox.Show(ex.Message);
             }
-
+            //admin.Show();
         }
+
     }
 }

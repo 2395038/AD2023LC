@@ -15,7 +15,7 @@
         <TextBox x:Name="id" HorizontalAlignment="Left" Margin="605,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
         <TextBox x:Name="PIN" HorizontalAlignment="Left" Margin="605,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
         <Button Content="LOGIN" HorizontalAlignment="Left" Margin="559,389,0,0" VerticalAlignment="Top" FontSize="25" Width="120" FontFamily="Gabriola" Background="White" Foreground="#FF5AB5D2" Click="Button_Click"/>
-        <RadioButton Content="Admin" HorizontalAlignment="Left" Height="40" Margin="565,339,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5" FontSize="24" FontFamily="Calibri Light">
+        <RadioButton Content="Admin" HorizontalAlignment="Left" Height="40" Margin="565,339,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5" FontSize="24" FontFamily="Calibri Light" Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

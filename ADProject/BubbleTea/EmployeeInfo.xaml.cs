@@ -21,8 +21,9 @@ using static Npgsql.Replication.PgOutput.Messages.RelationMessage;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
 using System.Numerics;
+using BubbleTea.Modles;
 
-using static BubbleTea.EmployeeLogin;
+
 
 namespace BubbleTea
 {
@@ -40,16 +41,16 @@ namespace BubbleTea
 
 
         }
-        List<string> employeeInfo = EmployeeLogin.EmployeeClass;
+
         public void AddValues()
         {
-
-            id.Text = employeeInfo[0];
-            lname.Text = employeeInfo[1];
-            fname.Text = employeeInfo[2];
-            email.Text = employeeInfo[3];
-            phone.Text = employeeInfo[4];
-            dept.Text = employeeInfo[5];
+            MessageBox.Show(Employee.emp_lname);
+            id.Text = "1001";
+            lname.Text = Employee.emp_lname;
+            fname.Text = Employee.emp_fname;
+            email.Text = Employee.emp_email;
+            phone.Text =Employee.emp_phone.ToString();
+            dept.Text = Employee.emp_dept;
         }
 
 

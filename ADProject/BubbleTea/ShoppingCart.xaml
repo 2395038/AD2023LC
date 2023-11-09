@@ -12,8 +12,6 @@
         </Grid.Background>
 
         <Button x:Name="checkout"  Content="Check Out" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3" Click="checkout_Click"/>
-        <Button x:Name="delete"  Content="delete" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3" Click="delete_Click"/>
         <Label x:Name="no" Content="NO." HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="29" Margin="0,0,550,39" Width="38"/>
-        <TextBox x:Name="OrderNo" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="29" Margin="0,0,400,39" TextWrapping="Wrap" Width="116"/>
     </Grid>
 </Window>

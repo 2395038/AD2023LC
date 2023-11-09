@@ -31,7 +31,10 @@
             <Label x:Name="label1_Copy2"  Content="Ingredients" FontSize="14" Canvas.Left="10" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Foreground="Black" FontWeight="Bold"/>
             <TextBox x:Name="ing" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="145" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy3"  Content="Category" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" Width="132"/>
-            <TextBox x:Name="category" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <ComboBox  x:Name="category" Canvas.Left="145"  Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <ComboBoxItem Content="Iced Tea"/>
+                <ComboBoxItem Content="Creamy Tea"/>
+            </ComboBox>
             <Label x:Name="categarylb"  Content="" FontSize="14" Canvas.Left="10" Canvas.Top="230" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
         <StackPanel Grid.Column="2" Margin="1,0,0,4" Grid.Row="1">
