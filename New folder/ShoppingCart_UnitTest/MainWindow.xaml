@@ -10,16 +10,20 @@
         <Grid.Background>
             <ImageBrush ImageSource="/图片_20231011214059.jpg"/>
         </Grid.Background>
-
-        <Button x:Name="checkout"  Content="Check Out" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3" Click="checkout_Click"/>
-        <Button x:Name="delete"  Content="delete" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3"/>
-        <Label x:Name="no" Content="NO." HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="29" Margin="0,0,550,39" Width="38"/>
-        <TextBox x:Name="OrderNo" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="29" Margin="0,0,400,39" TextWrapping="Wrap" Width="116"/>
-        <Label x:Name="ProductName" Content="ProductName" HorizontalAlignment="Left" Margin="520,109,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Quantity" Content="Quantity" HorizontalAlignment="Left" Margin="642,109,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Price" Content="Price" HorizontalAlignment="Left" Margin="740,109,0,0" VerticalAlignment="Top"/>
-        <Label Content="Thai Creamy" HorizontalAlignment="Left" Height="25" Margin="520,155,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="quantity1" HorizontalAlignment="Left" Margin="642,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"/>
-        <TextBox x:Name="price1" HorizontalAlignment="Left" Margin="740,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"/>
+        <Label Content="Employee ID" HorizontalAlignment="Left" Margin="450,183,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Calibri Light"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="450,250,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Calibri Light"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Margin="605,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
+        <TextBox x:Name="PIN" HorizontalAlignment="Left" Margin="605,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="30"/>
+        <Button Content="LOGIN" HorizontalAlignment="Left" Margin="559,389,0,0" VerticalAlignment="Top" FontSize="25" Width="120" FontFamily="Gabriola" Background="White" Foreground="#FF5AB5D2" Click="Button_Click"/>
+        <RadioButton Content="Admin" HorizontalAlignment="Left" Height="40" Margin="565,339,0,0" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5" FontSize="24" FontFamily="Calibri Light">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.104"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
     </Grid>
 </Window>

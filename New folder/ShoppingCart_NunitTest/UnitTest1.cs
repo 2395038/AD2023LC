@@ -1,24 +1,23 @@
-using ShoppingCart_UnitTest.Models;
+using LogIn_NunitTest.Models;
 namespace ShoppingCart_NunitTest
 {
     public class Tests
     {
-        private ShoppingCart sc { get; set; } = null;
+        private LogIn sc { get; set; } = null;
 
         [SetUp]
         public void Setup()
         {
-            sc = new ShoppingCart();
+            sc = new LogIn();
         }
 
         [Test]
-        public void getCheckOutTest()
+        public void getLogIn()
         {
-            int q = 2;
-            double p = 5.99;
-            double expectedTotal = 11.98;
+            string employeeId = "1001";
+            string password = "123";
 
-            var total = sc.getCheckOut(q, p);
+            var logIn = sc.getLogIn(employeeId,p);
 
             Assert.AreEqual(expectedTotal, total);
 

@@ -20,11 +20,11 @@ namespace BubbleTea
   
     public partial class MainWindow : Window
     {
-        private ShoppingCart sc { get; set; } = null;
+        private LogIn sc { get; set; } = null;
 
         public MainWindow() {
             
-            sc = new ShoppingCart();
+            sc = new LogIn();
             //InitializeComponent();
         }
     

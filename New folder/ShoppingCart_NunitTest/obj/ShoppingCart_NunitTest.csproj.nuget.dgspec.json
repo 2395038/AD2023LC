@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj": {}
+    "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj": {
+    "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj",
+        "projectUniqueName": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj",
         "projectName": "ShoppingCart_NunitTest",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_NunitTest\\obj\\",
+        "projectPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_NunitTest\\ShoppingCart_NunitTest.csproj",
+        "packagesPath": "C:\\Users\\zz918\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_NunitTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zz918\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\ShoppingCart_UnitTest.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\ShoppingCart_UnitTest.csproj"
+              "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\LogIn_UnitTest.csproj": {
+                "projectPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\LogIn_UnitTest.csproj"
               }
             }
           }
@@ -81,21 +85,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\ShoppingCart_UnitTest.csproj": {
+    "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\LogIn_UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\ShoppingCart_UnitTest.csproj",
-        "projectName": "ShoppingCart_UnitTest",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\ShoppingCart_UnitTest.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Software\\New folder\\ShoppingCart_UnitTest\\obj\\",
+        "projectUniqueName": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\LogIn_UnitTest.csproj",
+        "projectName": "LogIn_UnitTest",
+        "projectPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\LogIn_UnitTest.csproj",
+        "packagesPath": "C:\\Users\\zz918\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\ShoppingCart_UnitTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zz918\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,7 +147,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
