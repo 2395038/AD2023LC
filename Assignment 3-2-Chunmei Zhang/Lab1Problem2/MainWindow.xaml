@@ -1,0 +1,21 @@
+﻿<Window x:Class="Lab1Problem2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1Problem2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+ 
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/darksea.jpeg"/>
+        </Grid.Background>
+        <Label Content="Weight of Package (kg)" HorizontalAlignment="Left" Margin="135,86,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="#FFF8F3F3" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Mileage" HorizontalAlignment="Left" Margin="135,180,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="#FFF8F3F3" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="WOP" HorizontalAlignment="Left" Margin="135,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="M" HorizontalAlignment="Left" Margin="135,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Button Content="Shipping Charges" HorizontalAlignment="Left" Margin="135,305,0,0" VerticalAlignment="Top" Click="Button_Click" BorderBrush="#FFF8F3F3" Background="#FFF8F3F3" FontSize="20" Width="205" Foreground="#FF332AC7" FontWeight="Bold" FontFamily="Franklin Gothic Medium"/>
+        <Label Content="Fast Freight Shipping" HorizontalAlignment="Left" Margin="421,353,0,0" VerticalAlignment="Top" Foreground="#FFC5C9F3" FontSize="25" FontFamily="Segoe Script"/>
+    </Grid>
+</Window>
