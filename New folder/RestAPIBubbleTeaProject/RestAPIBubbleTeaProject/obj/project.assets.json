@@ -595,11 +595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zz918\\source\\repos\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject.csproj",
+      "projectUniqueName": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject.csproj",
       "projectName": "RestAPIBubbleTeaProject",
-      "projectPath": "C:\\Users\\zz918\\source\\repos\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject.csproj",
+      "projectPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject.csproj",
       "packagesPath": "C:\\Users\\zz918\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zz918\\source\\repos\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\obj\\",
+      "outputPath": "C:\\Users\\zz918\\OneDrive\\Doc\\GitHub\\AD2023LC\\New folder\\RestAPIBubbleTeaProject\\RestAPIBubbleTeaProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

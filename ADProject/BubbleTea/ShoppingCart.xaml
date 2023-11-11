@@ -12,6 +12,5 @@
         </Grid.Background>
 
         <Button x:Name="checkout"  Content="Check Out" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,39" FontSize="20" Width="140" FontFamily="Ink Free" FontWeight="Bold" Foreground="#FF3A95B3" Click="checkout_Click"/>
-        <Label x:Name="no" Content="NO." HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="29" Margin="0,0,550,39" Width="38"/>
     </Grid>
 </Window>

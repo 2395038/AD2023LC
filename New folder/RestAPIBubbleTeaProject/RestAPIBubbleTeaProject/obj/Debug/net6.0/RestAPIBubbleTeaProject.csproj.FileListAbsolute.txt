@@ -31,3 +31,36 @@ C:\Users\zz918\source\repos\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\
 C:\Users\zz918\source\repos\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.pdb
 C:\Users\zz918\source\repos\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.genruntimeconfig.cache
 C:\Users\zz918\source\repos\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\ref\RestAPIBubbleTeaProject.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\appsettings.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\RestAPIBubbleTeaProject.exe
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\RestAPIBubbleTeaProject.deps.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\RestAPIBubbleTeaProject.runtimeconfig.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\RestAPIBubbleTeaProject.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\RestAPIBubbleTeaProject.pdb
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\Npgsql.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.csproj.AssemblyReference.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.AssemblyInfoInputs.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.AssemblyInfo.cs
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.csproj.CoreCompileInputs.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets\msbuild.RestAPIBubbleTeaProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets\msbuild.build.RestAPIBubbleTeaProject.props
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RestAPIBubbleTeaProject.props
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RestAPIBubbleTeaProject.props
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\scopedcss\bundle\RestAPIBubbleTeaProject.styles.css
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.csproj.CopyComplete
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\refint\RestAPIBubbleTeaProject.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.pdb
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\RestAPIBubbleTeaProject.genruntimeconfig.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\RestAPIBubbleTeaProject\RestAPIBubbleTeaProject\obj\Debug\net6.0\ref\RestAPIBubbleTeaProject.dll

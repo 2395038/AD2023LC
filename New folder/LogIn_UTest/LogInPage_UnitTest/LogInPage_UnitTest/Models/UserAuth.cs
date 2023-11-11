@@ -60,11 +60,6 @@ namespace LogInPage_UnitTest.Models
 
                 NpgsqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
-
-
-                
-
-
                 if (employeeId == dr["employee_id"].ToString() && password == dr["password"].ToString())
                 {
 
