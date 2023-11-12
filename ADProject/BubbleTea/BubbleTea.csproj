@@ -115,6 +115,7 @@
     <Compile Include="Inventroy.xaml.cs">
       <DependentUpon>Inventroy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modles\Employee.cs" />
     <Compile Include="Product.xaml.cs">
       <DependentUpon>Product.xaml</DependentUpon>
     </Compile>

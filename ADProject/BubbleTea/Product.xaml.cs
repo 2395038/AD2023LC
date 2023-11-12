@@ -74,7 +74,7 @@ namespace BubbleTea
                 cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
                 cmd.Parameters.AddWithValue("@price",double.Parse(price.Text));
                 cmd.Parameters.AddWithValue("@ing", ing.Text);
-                cmd.Parameters.AddWithValue("@category", category.Text);
+                cmd.Parameters.AddWithValue("@category", ((ComboBoxItem)category.SelectedItem).Content.ToString());
 
 
                 cmd.ExecuteNonQuery();
@@ -163,7 +163,7 @@ namespace BubbleTea
 
                 con.Open();
 
-                string Query = "UPDATE categary  SET product_id = @id, product_name=@name, price = @price, ingredients = @ing, category= @category WHERE product_id= @id";
+                string Query = "UPDATE product SET product_id = @id, product_name=@name, price = @price, ingredients = @ing, category= @category WHERE product_id= @id";
 
                 cmd = new NpgsqlCommand(Query, con);
 
@@ -171,7 +171,7 @@ namespace BubbleTea
                 cmd.Parameters.AddWithValue("@id", int.Parse(id.Text));
                 cmd.Parameters.AddWithValue("@price", double.Parse(price.Text));
                 cmd.Parameters.AddWithValue("@ing", ing.Text);
-                cmd.Parameters.AddWithValue("@category", category.Text);
+                cmd.Parameters.AddWithValue("@category", ((ComboBoxItem)category.SelectedItem).Content.ToString());
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Updated Successfully");

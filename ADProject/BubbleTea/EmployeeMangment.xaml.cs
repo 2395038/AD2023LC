@@ -80,7 +80,7 @@ namespace BubbleTea
                 cmd.Parameters.AddWithValue("@id", id.Text);
                 cmd.Parameters.AddWithValue("@email", email.Text);
                 cmd.Parameters.AddWithValue("@phone", BigInteger.Parse(phone.Text));
-                cmd.Parameters.AddWithValue("@dept", dept.Text);
+                cmd.Parameters.AddWithValue("@dept", ((ComboBoxItem)dept.SelectedItem).Content.ToString());
                 cmd.Parameters.AddWithValue("@password", password.Text);
 
                 cmd.ExecuteNonQuery();
@@ -142,7 +142,6 @@ namespace BubbleTea
                 {
                     noData = false;
                     lname.Text = dr["Last_Name"].ToString();
-
                     fname.Text = dr["First_Name"].ToString();
                     id.Text = dr["Employee_ID"].ToString();
                     email.Text = dr["Email"].ToString();
@@ -181,7 +180,7 @@ namespace BubbleTea
                 cmd.Parameters.AddWithValue("@id", id.Text);
                 cmd.Parameters.AddWithValue("@email", email.Text);
                 cmd.Parameters.AddWithValue("@phone", BigInteger.Parse(phone.Text));
-                cmd.Parameters.AddWithValue("@dept", dept.Text);
+                cmd.Parameters.AddWithValue("@dept", ((ComboBoxItem)dept.SelectedItem).Content.ToString());
                 cmd.Parameters.AddWithValue("@password", password.Text);
 
                 cmd.ExecuteNonQuery();
@@ -229,5 +228,7 @@ namespace BubbleTea
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }

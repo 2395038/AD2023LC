@@ -1,0 +1,106 @@
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.exe.config
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.exe
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.pdb
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Npgsql.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Buffers.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Collections.Immutable.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Memory.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Json.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Channels.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.ValueTuple.dll
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Npgsql.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Buffers.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Collections.Immutable.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Memory.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Json.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Channels.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.ValueTuple.xml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.AssemblyReference.cache
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\MainWindow.g.cs
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\App.g.cs
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject_MarkupCompile.cache
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject_MarkupCompile.lref
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\MainWindow.baml
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.g.resources
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.Properties.Resources.resources
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.GenerateResource.cache
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.CoreCompileInputs.cache
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.CopyComplete
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.exe
+C:\Users\zz918\source\repos\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.pdb
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.exe.config
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.exe
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\WPFBubbleTeaProject.pdb
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Npgsql.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Buffers.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Collections.Immutable.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Memory.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Json.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Channels.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.ValueTuple.dll
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\Npgsql.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Buffers.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Collections.Immutable.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Memory.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Text.Json.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Channels.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\bin\Debug\System.ValueTuple.xml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.AssemblyReference.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\MainWindow.g.cs
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\App.g.cs
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject_MarkupCompile.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject_MarkupCompile.lref
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\MainWindow.baml
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.g.resources
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.Properties.Resources.resources
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.GenerateResource.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.CoreCompileInputs.cache
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.csproj.CopyComplete
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.exe
+C:\Users\zz918\OneDrive\Doc\GitHub\AD2023LC\New folder\WPFBubbleTeaProject\WPFBubbleTeaProject\obj\Debug\WPFBubbleTeaProject.pdb

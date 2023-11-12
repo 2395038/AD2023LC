@@ -33,7 +33,10 @@
             <Label x:Name="label1_Copy3"  Content="Phone" FontSize="14" Canvas.Left="10" Canvas.Top="184" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" Width="132"/>
             <TextBox x:Name="phone" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="188" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy4"  Content="Department" FontSize="14" Canvas.Left="10" Canvas.Top="230" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="dept" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="234" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <ComboBox x:Name="dept" Canvas.Left="145" Canvas.Top="234" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" >
+            <ComboBoxItem Content="admin"/>
+            <ComboBoxItem Content="employee"/>
+            </ComboBox>
             <Label x:Name="label1_Copy"  Content="Password" FontSize="14" Canvas.Left="10" Canvas.Top="277" Foreground="Black" FontWeight="Bold" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="password" Canvas.Left="145" TextWrapping="Wrap" Canvas.Top="281" Width="185" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
